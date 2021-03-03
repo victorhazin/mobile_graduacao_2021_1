@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">HelloWordGraduacao2021</string>
+    <string name="main_activity_hello_world"> Hello World!</string>
+</resources>
