@@ -2,4 +2,5 @@
     <string name="app_name">HelloWordGraduacao2021</string>
     <string name="main_activity_hello_world"> Name:</string>
     <string name="button_main_activity">Open Activity</string>
+    <string name="second_activity_message">Owner: %1$s Car: %2$s</string>
 </resources>

@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="main_activity_hello_world"> Nome:</string>
-    <string name="button_main_activity">Abra a activity</string></resources>
+    <string name="button_main_activity">Abra a activity</string>
+    <string name="second_activity_message">Dono: %1$s Carro: %2$s</string>
+</resources>
