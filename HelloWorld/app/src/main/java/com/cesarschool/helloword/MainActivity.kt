@@ -3,12 +3,12 @@ package com.cesarschool.helloword
 import android.app.Activity
 import android.content.Intent
 import android.content.pm.PackageManager
-import android.support.v7.app.AppCompatActivity
+import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.PersistableBundle
 import android.provider.AlarmClock
-import android.support.v4.app.ActivityCompat
-import android.support.v4.content.ContextCompat
+import androidx.core.app.ActivityCompat
+import androidx.core.content.ContextCompat
 import android.util.Log
 import android.widget.Toast
 import kotlinx.android.synthetic.main.activity_main.*
@@ -64,10 +64,10 @@ class MainActivity : AppCompatActivity() {
 
         val permissionCheck = ContextCompat.checkSelfPermission(this, android.Manifest.permission.SET_ALARM)
         if(permissionCheck != PackageManager.PERMISSION_GRANTED) {
-            Log.d("Notification", "Permission not granted earlier, permission: $permissionCheck")
+            Log.d("Victor", "Permission not granted earlier, permission: $permissionCheck")
             ActivityCompat.requestPermissions(this, arrayOf<String>(android.Manifest.permission.SET_ALARM),1)
         } else {
-            Log.d("Notification", "Permission was already granted")
+            Log.d("Victor", "Permission was already granted")
         }
 
         val intentAlarm = Intent(AlarmClock.ACTION_SET_ALARM)
