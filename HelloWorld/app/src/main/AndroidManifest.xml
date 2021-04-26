@@ -14,17 +14,17 @@
         <activity
             android:name=".RecyclerViewActivity"
             android:label="@string/title_activity_recycler_view"
-            android:theme="@style/Theme.HelloWordGraduacao2021.NoActionBar"></activity>
+            android:theme="@style/Theme.HelloWordGraduacao2021.NoActionBar">
+        </activity>
         <activity android:name=".ListActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
         <activity android:name=".TerceiraActivity" />
         <activity android:name=".NovaActivity" />
-        <activity android:name=".MainActivity"></activity>
+        <activity android:name=".MainActivity" />
     </application>
 
 </manifest>

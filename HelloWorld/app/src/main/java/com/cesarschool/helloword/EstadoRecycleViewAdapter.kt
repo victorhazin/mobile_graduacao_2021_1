@@ -84,7 +84,7 @@ class EstadoRecycleViewAdapter(private val context:Context,
 
 
     class VH(itemView:View) : RecyclerView.ViewHolder(itemView){
-        val imgBandeira : ImageView = itemView.imageViewFlag
+//        val imgBandeira : ImageView = itemView.imageViewFlag
         val txtName:TextView = itemView.textViewEstadoNome
     }
 

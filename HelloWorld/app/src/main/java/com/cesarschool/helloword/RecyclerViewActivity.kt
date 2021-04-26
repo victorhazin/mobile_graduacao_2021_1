@@ -1,20 +1,42 @@
 package com.cesarschool.helloword
 
-import android.os.Bundle
-import com.google.android.material.floatingactionbutton.FloatingActionButton
-import com.google.android.material.snackbar.Snackbar
 import androidx.appcompat.app.AppCompatActivity
+import android.os.Bundle
+import androidx.recyclerview.widget.GridLayoutManager
+import kotlinx.android.synthetic.main.activity_recycler_view.*
 
 class RecyclerViewActivity : AppCompatActivity() {
+
+    private val listEstados = listOf(
+        Estado("Pernambuco", 0),
+        Estado("Paraíba", 1),
+        Estado("São Paulo", 3)
+    )
+
+    private val mEstadoRecycleViewAdapter = EstadoRecycleViewAdapter(this, listEstados,
+        this::onEstadoClickListener)
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_recycler_view)
-        setSupportActionBar(findViewById(R.id.toolbar))
+        setupRecyclerView()
+    }
 
-        findViewById<FloatingActionButton>(R.id.fab).setOnClickListener { view ->
-            Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                .setAction("Action", null).show()
-        }
+    private fun onEstadoClickListener(estado: Estado){
+
+    }
+
+    private fun setupRecyclerView(){
+        recyclerView.adapter = mEstadoRecycleViewAdapter
+//        val layoutManager = LayoutM
+//            GridLayoutManager(this, 2)
+//        layoutManager.spanSizeLookup = object : GridLayoutManager.SpanSizeLookup(){
+//            override fun getSpanSize(position: Int): Int {
+//                return if(position==0) 2 else 1
+//            }
+//        }
+//        recyclerView.layoutManager = layoutManager
     }
 }
+
